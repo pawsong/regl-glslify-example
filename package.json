@@ -1,0 +1,27 @@
+{
+  "name": "regl-glslify-example",
+  "version": "0.0.0",
+  "description": "A simple regl example using browserify and glslify",
+  "main": "bundle.js",
+  "scripts": {
+    "start": "budo -t babelify -t glslify src/entry.js",
+    "build": "browserify -t babelify -t glslify src/entry.js > bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Giff Song <giff.song@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "angle-normals": "^1.0.0",
+    "bunny": "^1.0.1",
+    "gl-mat4": "^1.1.4",
+    "glsl-diffuse-lambert": "^1.0.0",
+    "regl": "^1.1.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.14.0",
+    "babel-preset-es2015": "^6.14.0",
+    "babelify": "^7.3.0",
+    "budo": "^9.2.0",
+    "glslify": "^5.1.0"
+  }
+}
