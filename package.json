@@ -21,6 +21,7 @@
     "babel-core": "^6.14.0",
     "babel-preset-es2015": "^6.14.0",
     "babelify": "^7.3.0",
+    "browserify": "^13.1.0",
     "budo": "^9.2.0",
     "glslify": "^5.1.0"
   }
